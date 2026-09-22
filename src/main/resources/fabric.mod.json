@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "id": "gameoverse_plush_rarity",
+  "version": "${version}",
+
+  "name": "Gameoverse Plush Rarity",
+  "description": "Makes Plushables' structure-loot drops actually rare instead of a roughly 50/50 coin flip per qualifying chest, without touching Plushables itself - probabilistically strips plush items out of any loot table's final drops via Fabric API's real MODIFY_DROPS hook.",
+  "authors": [
+    "WasabiIceCream"
+  ],
+
+  "license": "MIT",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.gameoverse.plushrarity.PlushRarity"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.19.5",
+    "fabric-api": "*",
+    "minecraft": ">=26.1",
+    "java": ">=25"
+  }
+}
